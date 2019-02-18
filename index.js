@@ -6,7 +6,7 @@ const fetch = require("node-fetch");
 
 
 // 0 * * * *
-schedule.scheduleJob('* * * * *', function(){
+schedule.scheduleJob('0 * * * *', function(){
   getWeather();
 });
 

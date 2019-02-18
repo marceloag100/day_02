@@ -1,0 +1,33 @@
+{
+  "name": "eltiempopuq",
+  "version": "1.0.0",
+  "description": "A bot that tweets every hour the weather in Punta Arenas",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "keywords": [
+    "Twitter",
+    "Bot",
+    "for",
+    "weather"
+  ],
+  "author": "@marceloag",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^6.2.0",
+    "moment": "^2.24.0",
+    "node-fetch": "^2.3.0",
+    "node-schedule": "^1.3.2",
+    "twit": "^2.2.11"
+  },
+  "devDependencies": {
+    "eslint": "^5.14.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0"
+  }
+}

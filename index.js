@@ -4,8 +4,6 @@ const twit = require("twit");
 const moment = require("moment");
 const fetch = require("node-fetch");
 
-
-// 0 * * * *
 schedule.scheduleJob('0 * * * *', function(){
   getWeather();
 });
@@ -21,7 +19,7 @@ var t = new twit({
 function getWeather(){
   var urlApi='https://community-open-weather-map.p.rapidapi.com/weather?id=2172797&lang=sp&units=metric&q=Punta+Arenas';
   var headersOW= { headers: { 'X-RapidAPI-Key': process.env.rapidApi } };
-  var timestamp = moment().format('LT');
+  var timestamp = moment().tz("America/Punta_Arenas").format('LT');
   fetch(urlApi, headersOW)
       .then(res => res.json())
       .then(json => {
